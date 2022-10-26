@@ -4,7 +4,7 @@
 
 
 ## Project Description:
-Photographer portfolio responsive and interactive landing page
+Adaptive and interactive landing page for a travel planning
 
 ## Highlights:
 - Semantic HTML
@@ -14,21 +14,13 @@ Photographer portfolio responsive and interactive landing page
 - Event listeners
 - Click events
 - Arrow functions 
-- Storing data in the Local Storage
-- Template strings
-- Data attributes
 - Modular JavaScript
 
 ## Features: 
 - Interactive burger menu
-- Lighting of the active button
-- Image caching
-- Interactive changing images in the portfolio section
-- Multiply language translation
-- Be able to switch between light and dark theme
-- Be able to resize the page without breaking the layout
-- Be able to smoothly scroll to other sections of the page with anchors
-
+- Slider in the "Popular Destinations" section
+- Login pop up
+- Sign pop up
 
 ## Techs:
  * HTML5
