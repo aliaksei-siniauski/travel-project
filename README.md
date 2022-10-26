@@ -1,6 +1,6 @@
 # [travel-project](https://aliaksei-siniauski.github.io/travel-project/)
 
-![photography-project screen](https://user-images.githubusercontent.com/92273438/190915601-9cd16dcc-459a-4781-a581-62d9711b448e.png)
+![photography-project screen](https://snipboard.io/fq2zU9.jpg)
 
 
 ## Project Description:
