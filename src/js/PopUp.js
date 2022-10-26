@@ -15,7 +15,6 @@ window.onload = () => {
   showSignPopUp();
   closeSingPopUp();
   showAccountPopUp();
-  addClickBulleteHander();
 };
 
 const showLoginPopUp = () => {
@@ -74,7 +73,7 @@ const closeSingPopUp = () => {
 };
 
 const showAccountPopUp = () => {
-  accountLink = document.querySelector(".account-link");
+  const accountLink = document.querySelector(".account-link");
   const loginPopUp = document.querySelector(".login-pop-up");
   accountLink.addEventListener("click", function () {
     loginPopUp.classList.add("active");

@@ -8,3 +8,4 @@ import {
   showAccountPopUp,
   showAleretWithUserEmailAndPassword,
 } from "./js/PopUp.js";
+import { matchesFunction } from "./js/Slider.js";
