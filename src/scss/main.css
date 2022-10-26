@@ -18,31 +18,74 @@
 /* container-width */
 /* Modal */
 /* Fonts */
-.modal-footer, .login-button, .icon-square, .slider-bullets, .slider-items, .slider-wrapper, .list.open, .list, .search, .footer-social, .footer-items, .story-item, .step-block, .steps-content, .header__container, body {
+.modal-footer,
+.login-button,
+.icon-square,
+.slider-bullets,
+.slider-items,
+.slider-wrapper,
+.list.open,
+.list,
+.search,
+.footer-social,
+.footer-items,
+.story-item,
+.step-block,
+.steps-content,
+.header__container,
+body {
   display: flex;
 }
 
-.list, .steps-content {
+.list,
+.steps-content {
   flex-wrap: wrap;
 }
 
-.slider-wrapper, .hamburger, .list.open, .step-block, body {
+.slider-wrapper,
+.hamburger,
+.list.open,
+.step-block,
+body {
   flex-direction: column;
 }
 
-.slider-bullets, .search, .footer-items, .story-item, .steps-content, .header__container, body {
+.slider-bullets,
+.search,
+.footer-items,
+.story-item,
+.steps-content,
+.header__container,
+body {
   justify-content: space-between;
 }
 
-.modal-footer, .login-button, .icon-square, .slider-items, .button--more {
+.modal-footer,
+.login-button,
+.icon-square,
+.slider-items,
+.button--more {
   justify-content: center;
 }
 
-.icon-square, .hamburger, .list, .button--more, .step-block, .header__container {
+.icon-square,
+.hamburger,
+.list,
+.button--more,
+.step-block,
+.header__container {
   align-items: center;
 }
 
-.modal-close, .modal-placeholder, .login-button, .icon-logo, .slider-bullet, .hamburger, .list__link, .button, .story-block__text--link {
+.modal-close,
+.modal-placeholder,
+.login-button,
+.icon-logo,
+.slider-bullet,
+.hamburger,
+.list__link,
+.button,
+.story-block__text--link {
   cursor: pointer;
 }
 
@@ -54,11 +97,19 @@
   text-transform: uppercase;
 }
 
-.sign-in--background, .icon, .slider-bullets, .slider-items, .list__link::before, .list__link, .button {
+.sign-in--background,
+.icon,
+.slider-bullets,
+.slider-items,
+.list__link::before,
+.list__link,
+.button {
   transition: 0.5s ease-in-out;
 }
 
-.sign-pop-up, .login-pop-up, .overlay {
+.sign-pop-up,
+.login-pop-up,
+.overlay {
   position: fixed;
   top: 0;
   right: 0;
@@ -119,7 +170,8 @@ body {
 
 .login-button {
   width: 100%;
-  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: none;
 }
@@ -164,8 +216,8 @@ li {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list],
+ul[role="list"],
+ol[role="list"],
 li {
   list-style: none;
 }
@@ -221,8 +273,8 @@ article {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -231,49 +283,56 @@ article {
 }
 @font-face {
   font-family: "Aleo";
-  src: url("../fonts/AleoItalic.woff") format("woff"), url("../fonts/AleoItalic.woff2") format("woff2");
+  src: url("../fonts/AleoItalic.woff") format("woff"),
+    url("../fonts/AleoItalic.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: "Aleo";
-  src: url("../fonts/AleoRegular.woff") format("woff"), url("../fonts/AleoRegular.woff2") format("woff2");
+  src: url("../fonts/AleoRegular.woff") format("woff"),
+    url("../fonts/AleoRegular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Aleo";
-  src: url("../fonts/AleoBold.woff") format("woff"), url("../fonts/AleoBold.woff2") format("woff2");
+  src: url("../fonts/AleoBold.woff") format("woff"),
+    url("../fonts/AleoBold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "RedHatText";
-  src: url("../fonts/RedHatTextRegular.woff") format("woff"), url("../fonts/RedHatTextRegular.woff2") format("woff2");
+  src: url("../fonts/RedHatTextRegular.woff") format("woff"),
+    url("../fonts/RedHatTextRegular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "RedHatText";
-  src: url("../fonts/RedHatTextMedium.woff") format("woff"), url("../fonts/RedHatTextMedium.woff2") format("woff2");
+  src: url("../fonts/RedHatTextMedium.woff") format("woff"),
+    url("../fonts/RedHatTextMedium.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Magra";
-  src: url("../fonts/MagraBold.woff") format("woff"), url("../fonts/MagraBold.woff2") format("woff2");
+  src: url("../fonts/MagraBold.woff") format("woff"),
+    url("../fonts/MagraBold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Aleo";
-  src: url("../fonts/AleoBoldItalic.woff") format("woff"), url("../fonts/AleoBoldItalic.woff2") format("woff2");
+  src: url("../fonts/AleoBoldItalic.woff") format("woff"),
+    url("../fonts/AleoBoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: italic;
@@ -408,7 +467,13 @@ h5 {
 .header__container {
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(11deg, 85%, 65%, 0.7))), url("../images/main-bg.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(11deg, 85%, 65%, 0.7))
+    ),
+    url("../images/main-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
 }
@@ -421,7 +486,12 @@ h5 {
 @media (max-width: 391px) {
   .header__container {
     padding-top: 4.4rem;
-    background: -webkit-linear-gradient(-90deg, #0d606f 1%, rgba(13, 96, 111, 0) 100%), url("../images/main-bg-mb.jpg");
+    background: -webkit-linear-gradient(
+        -90deg,
+        #0d606f 1%,
+        rgba(13, 96, 111, 0) 100%
+      ),
+      url("../images/main-bg-mb.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
   }
@@ -641,7 +711,13 @@ h5 {
 
 .stories-inner {
   min-height: 1270px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7))), url("../images/footer-bg.jpg");
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.7))
+    ),
+    url("../images/footer-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
 }
@@ -658,7 +734,13 @@ h5 {
 @media (max-width: 391px) {
   .stories-inner {
     min-height: 628px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7))), url("../images/footer-bg-mb.jpg");
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(255, 255, 255, 0.7))
+      ),
+      url("../images/footer-bg-mb.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
   }
@@ -880,7 +962,8 @@ h5 {
   z-index: 1;
   display: inline-block;
   background: hsl(189deg, 79%, 24%);
-  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
   font-family: "RedHatText";
   font-size: 1.6rem;
   line-height: 2.1rem;
@@ -1523,7 +1606,8 @@ h5 {
   width: 100%;
   min-height: 54px;
   background: hsl(0deg, 0%, 100%);
-  box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08),
+    inset 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: none;
 }
@@ -1539,19 +1623,23 @@ h5 {
   background: linear-gradient(177.09deg, #ffffff 6.15%, #0d606f 202.69%);
 }
 
-.sign-pop-up.active, .login-pop-up.active {
+.sign-pop-up.active,
+.login-pop-up.active {
   top: 0;
   opacity: 1;
   transform: scale(1);
-  transition: top 0ms ease-in-out 0ms, opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+  transition: top 0ms ease-in-out 0ms, opacity 500ms ease-in-out 0ms,
+    transform 500ms ease-in-out 0ms;
 }
 
-.sign-pop-up, .login-pop-up {
+.sign-pop-up,
+.login-pop-up {
   background: none;
   opacity: 0;
   top: -150%;
   transform: scale(0.5);
-  transition: top 0ms ease-in-out 500ms, opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+  transition: top 0ms ease-in-out 500ms, opacity 500ms ease-in-out 0ms,
+    transform 500ms ease-in-out 0ms;
   pointer-events: none;
 }
 
