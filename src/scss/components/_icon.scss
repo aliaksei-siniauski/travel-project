@@ -1,6 +1,7 @@
 .icon {
   display: inline-block;
   fill: $light-color;
+  @extend %transition;
   &:hover {
     fill: $hover-color;
   }
@@ -9,6 +10,7 @@
 .icon-logo {
   width: 30px;
   height: 30px;
+  @extend %cursor-pointer;
 }
 
 .icon-square {

@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-.modal-close, .modal-placeholder, .login-button, .slider-bullet, .hamburger, .list__link, .button, .story-block__text--link {
+.modal-close, .modal-placeholder, .login-button, .icon-logo, .slider-bullet, .hamburger, .list__link, .button, .story-block__text--link {
   cursor: pointer;
 }
 
@@ -54,7 +54,7 @@
   text-transform: uppercase;
 }
 
-.sign-in--background, .slider-bullets, .slider-items, .list__link::before, .list__link, .button {
+.sign-in--background, .icon, .slider-bullets, .slider-items, .list__link::before, .list__link, .button {
   transition: 0.5s ease-in-out;
 }
 
