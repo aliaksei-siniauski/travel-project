@@ -1,0 +1,53 @@
+/* Color */
+
+$main-color: hsla(189, 79%, 24%, 1);
+$secondary-color: hsla(11, 85%, 65%, 1);
+$input-color: hsla(214, 89%, 52%, 1);
+$hover-color: hsl(180, 100%, 50%);
+
+$light-color: hsla(0, 0%, 100%, 1);
+
+/* size */
+
+/* desktop */
+
+$fs-main: 2rem; /* 20px */
+$fs-section: 4rem; /* 40px */
+$fs-link: 1.6rem; /* 16px */
+$fs-button: 2.4rem; /* 24px */
+$fs-title: 3.5rem; /* 35px */
+$fs-logo: 3.2rem; /* 32px */
+
+$height-link: 2.1rem;
+$height-main: 2.4rem;
+/* mobile */
+
+$fs-section-mobile: 1.4rem; /* 14px */
+$fs-title-mobile: 1.1rem; /* 11px */
+$fs-main-mobile: 0.9rem; /* 9px */
+
+/* border */
+
+$button-radius: 1rem;
+$img-radius: 1.6rem;
+
+/* outset */
+$padding-inline: 12rem;
+$padding-inline-mb: 1.5rem;
+
+/* font-family */
+$ff-main: "Aleo";
+$ff-secondary: "RedHatText";
+$ff-logo: "Magro";
+
+/* font-weight */
+$bold: 700;
+
+/* container-width */
+
+$desktop-width: 1440px;
+$mobile-width: 391px;
+
+/* Modal */
+
+$modal-width: 650px;

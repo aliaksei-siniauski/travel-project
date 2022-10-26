@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %js-content-space-between;
+  @include font($fs-main, $height-main);
+  font-family: $ff-main;
+  color: $light-color;
+  overflow: hidden;
+}
+
+.section-title {
+  padding: 8rem 0 4rem;
+  color: $secondary-color;
+  @extend %text-center;
+  text-transform: uppercase;
+  @include media-laptop {
+    padding: 4.5rem 0;
+  }
+  @include media-tablet {
+    @include font(5vw, 5vw);
+  }
+  @include media-mobile {
+    padding: 2rem 0;
+    @include font($fs-section-mobile, 1.9rem);
+  }
+}
+
+.overlay {
+  @extend %overlay;
+  &--transform {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.login-button {
+  width: 100%;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: none;
+}
+.meta-login {
+  background: #1877f2;
+}

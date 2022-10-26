@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/icons/favicon.ico" />
+    <link rel="stylesheet" href="src/scss/main.css" />
+    <title>Travel</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="logo">
+          <svg class="icon icon-logo">
+            <use xlink:href="src/icons/sprite.svg#i-logo"></use>
+          </svg>
+          <a href="index.html" class="logo__ttile">Travel Portal</a>
+        </div>
+        <!-- close logo -->
+        <nav class="nav header__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#preview" class="list__link">How It Works</a>
+            </li>
+            <li class="list__item">
+              <a href="#steps" class="list__link">Plan Your Trip</a>
+            </li>
+            <li class="list__item">
+              <a href="#destinations" class="list__link">Destinations</a>
+            </li>
+            <li class="list__item">
+              <a href="#stories" class="list__link">Travel Stories</a>
+            </li>
+            <li class="list__item list__item--mobile account-link">
+              <a href="#" class="list__link">Account</a>
+            </li>
+            <li class="list__item list__item--mobile">
+              <a href="#social" class="list__link">Social Media</a>
+            </li>
+          </ul>
+          <!-- close list -->
+        </nav>
+        <!-- close nav -->
+        <div class="header__button">
+          <button class="button button--small button-login">Login</button>
+        </div>
+        <!-- close header__button -->
+        <!-- pop-up -->
+        <span class="hamburger">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </span>
+      </div>
+      <!-- close container -->
+    </header>
+    <main>
+      <section id="preview" class="preview">
+        <div class="container preview__container">
+          <div class="preview-content">
+            <h1 class="preview__title">Explore the beauty of the World</h1>
+            <p class="preview__text">
+              Receive personalized recommendations for countries, hotels,
+              activities and more
+            </p>
+            <div class="search preview__search">
+              <input
+                class="search__input"
+                type="text"
+                placeholder="What would you like to do?"
+              />
+              <button type="submit" class="button button--main search__button">
+                Start Planning
+              </button>
+            </div>
+          </div>
+          <!-- close preview-content -->
+        </div>
+        <!-- close container -->
+      </section>
+      <!-- close preview section -->
+      <section id="steps" class="steps">
+        <div class="container steps__container">
+          <h2 class="section-title">3 STEPS TO THE PERFECT TRIP</h2>
+          <div class="steps-content">
+            <div class="step-block">
+              <div class="step-block__icon">
+                <span class="icon-square">
+                  <span class="icon icon-step icon-step-1"> </span>
+                </span>
+              </div>
+              <!-- close step-block__icon -->
+              <p class="step-block__title">Tell us what you want to do</p>
+            </div>
+            <!-- close step-block -->
+            <div class="step-block">
+              <div class="step-block__icon">
+                <span class="icon-square">
+                  <span class="icon icon-step icon-step-2"> </span>
+                </span>
+              </div>
+              <!-- close step-block__icon -->
+              <p class="step-block__title">Share us preferable dates</p>
+            </div>
+            <!-- close step-block -->
+            <div class="step-block">
+              <div class="step-block__icon">
+                <span class="icon-square">
+                  <span class="icon icon-step icon-step-3"> </span>
+                </span>
+              </div>
+              <!-- close step-block__icon -->
+              <p class="step-block__title">We will give you recommendations</p>
+            </div>
+            <!-- close step-block -->
+          </div>
+          <!-- close steps-block -->
+        </div>
+      </section>
+      <!-- close steps section -->
+      <section id="destinations" class="destinations">
+        <div class="container">
+          <h2 class="section-title destinations__title">
+            POPULAR DESTINATIONS
+          </h2>
+        </div>
+        <!-- close container -->
+        <div class="slider__container">
+          <div class="slider-wrapper">
+            <div class="slider-items">
+              <div class="slider-item slider-left">
+                <span class="slider-item__title"> SPAIN </span>
+              </div>
+              <!-- close slider-item -->
+              <div class="slider-item slider-center">
+                <span class="slider-item__title"> JAPAN </span>
+              </div>
+              <!-- close slider-item -->
+              <div class="slider-item slider-right">
+                <span class="slider-item__title"> USA </span>
+              </div>
+              <!-- close slider-item -->
+            </div>
+            <!-- close slider -->
+            <a class="slider-arrow arrow-prew">
+              <svg class="icon-slider">
+                <use xlink:href="src/icons/sprite.svg#i-prew"></use>
+              </svg>
+            </a>
+            <a class="slider-arrow arrow-next">
+              <svg class="icon-slider">
+                <use xlink:href="src/icons/sprite.svg#i-next"></use>
+              </svg>
+            </a>
+            <div class="slider-bullets">
+              <span class="slider-bullet bullet-left bullet-active--mb"></span>
+              <span class="slider-bullet bullet-center bullet-active"></span>
+              <span class="slider-bullet bullet-right"></span>
+            </div>
+            <!-- close slider-bullets -->
+            <button class="button button--more">
+              <svg class="icon icon-arrow">
+                <use xlink:href="src/icons/sprite.svg#i-arrow"></use>
+              </svg>
+              Find More
+            </button>
+          </div>
+          <!-- slider-wrapper -->
+        </div>
+        <!-- close container -->
+      </section>
+      <!-- close destinations -->
+      <section id="stories" class="stories">
+        <div class="container">
+          <h2 class="section-title stories__title">TRAVEL STORIES</h2>
+        </div>
+        <!-- close container -->
+        <div class="stories-inner">
+          <div class="stories__container">
+            <div class="stories-content">
+              <div class="story-item">
+                <picture>
+                  <source
+                    media="(min-width: 391px)"
+                    srcset="src/images/story-1.jpg"
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="src/images/story-1-mb.jpg"
+                  />
+                  <img
+                    class="story-image"
+                    src="src/images/story-1.jpg"
+                    alt="story-1"
+                  />
+                </picture>
+                <div class="story-block">
+                  <h3 class="story-block__title">
+                    10 Photos of Attractive Thailand
+                  </h3>
+                  <p class="story-block__text" lang="zxx">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla<span class="text-hide">
+                      pariatur. Excepteur sint occaecat cupidatat non proident,
+                      sunt in culpa qui officia deserunt mollit anim id est
+                      laborum</span
+                    >.Lorem ipsum dolor sit a<span class="text-hide"
+                      >met, consectetur adipiscing elit</span
+                    >...<span class="story-block__text--link"> Read More</span>
+                  </p>
+                </div>
+                <!-- story-block -->
+              </div>
+              <div class="story-item">
+                <picture>
+                  <source
+                    media="(min-width: 391px)"
+                    srcset="src/images/story-2.jpg"
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="src/images/story-2-mb.jpg"
+                  />
+                  <img
+                    class="story-image"
+                    src="src/images/story-2.jpg"
+                    alt="story-2"
+                  />
+                </picture>
+                <div class="story-block">
+                  <h3 class="story-block__title">
+                    Canyonlands National Park, Utah
+                  </h3>
+                  <p class="story-block__text" lang="zxx">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla<span class="text-hide">
+                      pariatur. Excepteur sint occaecat cupidatat non proident,
+                      sunt in culpa qui officia deserunt mollit anim id est
+                      laborum</span
+                    >.Lorem ipsum dolor sit a<span class="text-hide"
+                      >met, consectetur adipiscing elit</span
+                    >...<span class="story-block__text--link"> Read More</span>
+                  </p>
+                </div>
+                <!-- story-block -->
+              </div>
+              <!-- story-item -->
+              <div class="story-item">
+                <picture>
+                  <source
+                    media="(min-width: 391px)"
+                    srcset="src/images/story-3.jpg"
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="src/images/story-3-mb.jpg"
+                  />
+                  <img
+                    class="story-image"
+                    src="src/images/story-3.jpg"
+                    alt="story-3"
+                  />
+                </picture>
+                <div class="story-block">
+                  <h3 class="story-block__title">
+                    I left my heart in the Mountains!
+                  </h3>
+                  <p class="story-block__text" lang="zxx">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla<span class="text-hide">
+                      pariatur. Excepteur sint occaecat cupidatat non proident,
+                      sunt in culpa qui officia deserunt mollit anim id est
+                      laborum</span
+                    >.Lorem ipsum dolor sit a<span class="text-hide"
+                      >met, consectetur adipiscing elit</span
+                    >...<span class="story-block__text--link"> Read More</span>
+                  </p>
+                </div>
+                <!-- story-block -->
+              </div>
+              <!-- story-item -->
+              <div class="story-item">
+                <picture>
+                  <source
+                    media="(min-width: 391px)"
+                    srcset="src/images/story-4.jpg"
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="src/images/story-4-mb.jpg"
+                  />
+                  <img
+                    class="story-image"
+                    src="src/images/story-4.jpg"
+                    alt="story-4"
+                  />
+                </picture>
+                <div class="story-block">
+                  <h3 class="story-block__title">
+                    The Longest journey in my life!
+                  </h3>
+                  <p class="story-block__text" lang="zxx">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla<span class="text-hide">
+                      pariatur. Excepteur sint occaecat cupidatat non proident,
+                      sunt in culpa qui officia deserunt mollit anim id est
+                      laborum</span
+                    >.Lorem ipsum dolor sit a<span class="text-hide"
+                      >met, consectetur adipiscing elit</span
+                    >...<span class="story-block__text--link"> Read More</span>
+                  </p>
+                </div>
+                <!-- story-block -->
+              </div>
+              <!-- story-item -->
+            </div>
+            <!-- stories-content -->
+            <button class="button button--more story__button">
+              <svg class="icon icon-arrow">
+                <use xlink:href="src/icons/sprite.svg#i-arrow"></use>
+              </svg>
+              See More
+            </button>
+          </div>
+          <!-- stories-container -->
+        </div>
+        <!-- stories-inner -->
+      </section>
+    </main>
+    <footer id="social" class="footer">
+      <div class="container footer__container">
+        <div class="footer-items">
+          <div class="footer-information">
+            <a
+              href="https://rs.school/js-stage0/"
+              target="_blank"
+              class="footer-information__text"
+              >All Rights Reserved © Travel Portal</a
+            >
+          </div>
+          <!-- footer-information -->
+          <ul class="footer-social">
+            <li class="footer-social__item">
+              <a
+                class="footer-social__link"
+                href="https://rs.school/js-stage0"
+                target="_blank"
+              >
+                <svg class="icon icon-inst">
+                  <use xlink:href="src/icons/sprite.svg#i-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a
+                class="footer-social__link"
+                href="https://github.com/aliaksei-siniauski"
+              >
+                <svg class="icon icon-youtube">
+                  <use xlink:href="src/icons/sprite.svg#i-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a
+                class="footer-social__link"
+                href="https://github.com/aliaksei-siniauski"
+              >
+                <svg class="icon icon-twitter">
+                  <use xlink:href="src/icons/sprite.svg#i-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- close footer-social -->
+        </div>
+        <!-- close footer-items -->
+      </div>
+    </footer>
+    <div class="modal login-pop-up">
+      <div class="modal-container overlay overlay--transform">
+        <div class="modal-content">
+          <div class="modal-close login-close">&#10006;</div>
+          <form action="#" class="form modal-form" method="get">
+            <div class="modal-part-first">
+              <h1 class="modal-login">Log in to your account</h1>
+              <div class="login-buttons modal-buttons">
+                <button type="submit" class="login login-button meta-login">
+                  <span class="icon icon-meta"></span>
+                  <span class="sign-in sign-in--light"
+                    >Sign in with Facebook</span
+                  >
+                </button>
+                <button type="submit" class="login login-button google-login">
+                  <span class="icon icon-google"></span>
+                  <span class="sign-in">Sign In with Google</span>
+                </button>
+              </div>
+              <!-- login-buttons -->
+              <div class="modal-border-wrapper">
+                <span class="modal-border">
+                  <span class="modal-subtitle">or</span>
+                </span>
+                <!-- close modal-subtitle -->
+              </div>
+              <!-- close modal-border-wrapper -->
+            </div>
+            <!-- close modal-part-first -->
+            <div class="modal-part-two">
+              <label for="email" class="form-label"><h4>Email</h4></label>
+              <input
+                type="text"
+                name="email"
+                class="modal-input sign-in-email"
+                placeholder="Enter Email"
+                required
+              />
+              <label for="password" class="form-label"><h4>Password</h4></label>
+              <input
+                type="password"
+                name="password"
+                class="modal-input sign-in-password"
+                placeholder="Enter Password"
+                required
+              />
+              <button class="login-button sign-in--background sign-in-button">
+                Sign in
+              </button>
+              <h5 class="modal-placeholder password-queastion">
+                Forgot Your Password?
+              </h5>
+              <div class="modal-footer">
+                <span class="modal-placeholder modal-placeholder--transporent"
+                  ><h5>Dont'have acount?</h5></span
+                >
+                <span
+                  class="modal-placeholder modal-placeholder--background register"
+                  ><h5>Register</h5></span
+                >
+              </div>
+              <!-- close modal-footer -->
+            </div>
+          </form>
+          <!-- close form -->
+        </div>
+        <!-- close modal-content -->
+      </div>
+      <!-- close modal container -->
+    </div>
+    <div class="modal sign-pop-up">
+      <div class="modal-container account-container overlay overlay--transform">
+        <div class="modal-content">
+          <div class="modal-close account-close">&#10006;</div>
+          <h1 class="modal-login">Create account</h1>
+          <form action="#" class="form modal-form" method="get">
+            <div class="modal-part-two">
+              <label for="email" class="form-label"><h4>Email</h4></label>
+              <input
+                type="text"
+                name="email"
+                class="modal-input"
+                placeholder="Enter Email"
+                required
+              />
+              <label for="password" class="form-label"><h4>Password</h4></label>
+              <input
+                type="password"
+                name="password"
+                class="modal-input"
+                placeholder="Enter Password"
+                required
+              />
+              <button class="login-button sign-in--background">Sign Up</button>
+              <div class="modal-footer">
+                <span class="modal-placeholder modal-placeholder--transporent"
+                  ><h5>Already have an acount?</h5></span
+                >
+                <span
+                  class="modal-placeholder modal-placeholder--background account-login"
+                  ><h5>Login in</h5></span
+                >
+              </div>
+              <!-- close modal-footer -->
+            </div>
+            <!-- close modal-par-two -->
+          </form>
+        </div>
+        <!-- close modal-content -->
+      </div>
+      <!-- close modal-container -->
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

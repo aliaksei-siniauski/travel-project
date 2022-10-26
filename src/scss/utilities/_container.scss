@@ -1,0 +1,12 @@
+.container {
+  max-width: $desktop-width;
+  padding-inline: $padding-inline;
+  margin: 0 auto;
+  @include media-laptop-large {
+    padding-inline: 1.5rem;
+  }
+  @include media-mobile {
+    max-width: $mobile-width;
+    padding-inline: $padding-inline-mb;
+  }
+}

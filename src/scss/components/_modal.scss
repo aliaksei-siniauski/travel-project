@@ -1,0 +1,255 @@
+%modal-input {
+  width: 100%;
+  min-height: 54px;
+  background: $light-color;
+  box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08),
+    inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: none;
+  @include media-mobile-big {
+    min-height: 5vh;
+  }
+}
+
+%modal-background {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  background: linear-gradient(177.09deg, #ffffff 6.15%, #0d606f 202.69%);
+}
+
+%modal-active {
+  top: 0;
+  opacity: 1;
+  transform: scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 500ms ease-in-out 0ms,
+    transform 500ms ease-in-out 0ms;
+}
+
+%position-pop-up {
+  background: none;
+  opacity: 0;
+  top: -150%;
+  transform: scale(0.5);
+  transition: top 0ms ease-in-out 500ms, opacity 500ms ease-in-out 0ms,
+    transform 500ms ease-in-out 0ms;
+  pointer-events: none;
+}
+
+.modal-container {
+  min-width: $modal-width;
+  min-height: 660px;
+  padding-inline: 4.5rem;
+  @extend %modal-background;
+  @include media-tablet {
+    min-width: 450px;
+  }
+  @include media-mobile-big {
+    min-width: 350px;
+    min-height: 450px;
+  }
+}
+.modal-content {
+  position: relative;
+  padding: 2.5rem 0 2.3rem;
+  color: $main-color;
+  @include media-mobile-big {
+    padding: 2vh 0 2vh;
+  }
+}
+.modal-login {
+  font-family: $ff-main;
+  @include font(3.2rem, 3.8rem, $bold);
+  text-align: center;
+  @include media-mobile-big {
+    @include font(3vh, 4.5vh);
+  }
+}
+
+.modal-buttons {
+  padding: 3rem 0;
+  @include media-mobile-big {
+    padding: 1vh 0;
+  }
+}
+
+.login-button {
+  @extend %flex;
+  @extend %js-content-center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  font-family: $ff-secondary;
+  @include font(2rem, 2.6rem, 400);
+  color: $light-color;
+  @extend %cursor-pointer;
+  @include media-mobile-big {
+    @include font(2vh, 2vh);
+    padding: 1vh 0;
+  }
+  &:last-child {
+    margin-top: 2rem;
+    @include media-mobile-big {
+      margin-top: 1.2vh;
+    }
+  }
+}
+
+.google-login {
+  background: $light-color;
+  color: $main-color;
+}
+
+.sign-in {
+  &--light {
+    color: $light-color;
+  }
+  &--background {
+    margin-top: 2.5rem;
+    background: $main-color;
+    @extend %transition;
+    &:hover {
+      color: $main-color;
+      background: darken($hover-color, 15%);
+    }
+  }
+  @include media-mobile-big {
+    padding: 1vh 0;
+  }
+}
+
+.modal-border-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.modal-border {
+  color: rgba(13, 96, 111, 0.5);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 261px;
+    height: 1px;
+    background: hsla(189, 79%, 24%, 0.5);
+    @include media-tablet {
+      width: 40%;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 261px;
+    height: 1px;
+    background: #0d606f80;
+    @include media-tablet {
+      width: 40%;
+    }
+  }
+}
+
+.modal-subtitle {
+  display: block;
+  position: relative;
+  padding-inline: 0.9rem;
+}
+
+.modal-part-two {
+  padding-top: 1rem;
+  @include media-mobile-big {
+    padding: 0.1vh 0;
+  }
+}
+
+.modal-input {
+  margin-top: 0.5rem;
+  @extend %modal-input;
+  @include media-mobile-big {
+    margin-top: 0.5vh;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:first-of-type {
+    margin-bottom: 2rem;
+  }
+  &::placeholder {
+    @include media-tablet-large {
+      font-size: 2vh;
+    }
+  }
+}
+
+.password-queastion {
+  padding-top: 1rem;
+  padding-bottom: 2.6rem;
+  border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+  transform: rotate(0.1deg);
+  @include media-mobile-big {
+    padding-bottom: 1vh;
+  }
+}
+
+.modal-footer {
+  @extend %flex;
+  @extend %js-content-center;
+  padding-top: 2rem;
+}
+
+.modal-placeholder {
+  @extend %cursor-pointer;
+  &--transporent {
+    color: hsla(189, 79%, 24%, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  }
+  &--background {
+    margin-left: 0.5rem;
+    border-bottom: 1px solid $main-color;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 1%;
+  @extend %cursor-pointer;
+}
+
+/* login-pop-up */
+
+.login-pop-up {
+  @extend %overlay;
+  @extend %position-pop-up;
+
+  &.active {
+    @extend %modal-active;
+    @include media-mobile-big {
+      top: -10%;
+    }
+  }
+  pointer-events: visible;
+}
+
+/* Sign up pop up */
+
+.sign-pop-up {
+  @extend %overlay;
+  @extend %position-pop-up;
+
+  &.active {
+    @extend %modal-active;
+    @include media-mobile-big {
+      top: -20%;
+    }
+  }
+  pointer-events: visible;
+}
+
+.account-container {
+  min-height: 436px;
+  @include media-mobile-big {
+    min-height: 300px;
+  }
+}

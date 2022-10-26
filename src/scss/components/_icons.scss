@@ -1,0 +1,56 @@
+.icon {
+  &:hover {
+    fill: $hover-color;
+  }
+}
+
+.logo__icon {
+  width: 3rem;
+  height: 3rem;
+  fill: $light-color;
+}
+
+.step__icon {
+  width: 5rem;
+  height: 4.5rem;
+  fill: $light-color;
+  @include media-mobile {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+.icon-step-3 {
+  @include media-mobile {
+    width: 4rem;
+    height: 3rem;
+  }
+}
+
+.arrow-icon {
+  width: 3.6rem;
+  height: 3.2rem;
+  fill: #f8f8f8;
+  @include media-mobile {
+    width: 0.8rem;
+    height: 0.5rem;
+  }
+}
+
+.footer__icon {
+  width: 3.6rem;
+  height: 3.2rem;
+  fill: #f8f8f8;
+  @include media-mobile {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+
+.i-youtube {
+  fill: none;
+}
+
+.i-slider {
+  width: 2.6em;
+  height: 2.6rem;
+}
