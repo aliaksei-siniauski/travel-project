@@ -813,7 +813,7 @@ h5 {
 
 .footer__container {
   min-height: 61px;
-  background: url("../images/fotter-bg.jpg");
+  background: url("../images/footer-bg.jpg");
   background-position: center -1260px;
   background-repeat: no-repeat;
 }
@@ -826,7 +826,7 @@ h5 {
 @media (max-width: 391px) {
   .footer__container {
     min-height: 65px;
-    background: url("../images/fotter-bg-mb.jpg");
+    background: url("../images/footer-bg-mb.jpg");
     background-position: center -628px;
     background-repeat: no-repeat;
   }

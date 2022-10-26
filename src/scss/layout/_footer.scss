@@ -1,6 +1,6 @@
 .footer__container {
   min-height: 61px;
-  background: url("../images/fotter-bg.jpg");
+  background: url("../images/footer-bg.jpg");
   background-position: center -1260px;
   background-repeat: no-repeat;
   @media (min-width: 1441px) {
@@ -9,7 +9,7 @@
   }
   @include media-mobile {
     min-height: 65px;
-    background: url("../images/fotter-bg-mb.jpg");
+    background: url("../images/footer-bg-mb.jpg");
     background-position: center -628px;
     background-repeat: no-repeat;
   }
