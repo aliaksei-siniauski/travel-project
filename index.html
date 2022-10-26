@@ -394,5 +394,118 @@
         <!-- close footer-items -->
       </div>
     </footer>
+    <div class="modal login-pop-up">
+      <div class="modal-container overlay overlay--transform">
+        <div class="modal-content">
+          <div class="modal-close login-close">&#10006;</div>
+          <form action="#" class="form modal-form" method="get">
+            <div class="modal-part-first">
+              <h1 class="modal-login">Log in to your account</h1>
+              <div class="login-buttons modal-buttons">
+                <button type="submit" class="login login-button meta-login">
+                  <span class="icon icon-meta"></span>
+                  <span class="sign-in sign-in--light"
+                    >Sign in with Facebook</span
+                  >
+                </button>
+                <button type="submit" class="login login-button google-login">
+                  <span class="icon icon-google"></span>
+                  <span class="sign-in">Sign In with Google</span>
+                </button>
+              </div>
+              <!-- login-buttons -->
+              <div class="modal-border-wrapper">
+                <span class="modal-border">
+                  <span class="modal-subtitle">or</span>
+                </span>
+                <!-- close modal-subtitle -->
+              </div>
+              <!-- close modal-border-wrapper -->
+            </div>
+            <!-- close modal-part-first -->
+            <div class="modal-part-two">
+              <label for="email" class="form-label"><h4>Email</h4></label>
+              <input
+                type="text"
+                name="email"
+                class="modal-input sign-in-email"
+                placeholder="Enter Email"
+                required
+              />
+              <label for="password" class="form-label"><h4>Password</h4></label>
+              <input
+                type="password"
+                name="password"
+                class="modal-input sign-in-password"
+                placeholder="Enter Password"
+                required
+              />
+              <button class="login-button sign-in--background sign-in-button">
+                Sign in
+              </button>
+              <h5 class="modal-placeholder password-queastion">
+                Forgot Your Password?
+              </h5>
+              <div class="modal-footer">
+                <span class="modal-placeholder modal-placeholder--transporent"
+                  ><h5>Dont'have acount?</h5></span
+                >
+                <span
+                  class="modal-placeholder modal-placeholder--background register"
+                  ><h5>Register</h5></span
+                >
+              </div>
+              <!-- close modal-footer -->
+            </div>
+          </form>
+          <!-- close form -->
+        </div>
+        <!-- close modal-content -->
+      </div>
+      <!-- close modal container -->
+    </div>
+    <div class="modal sign-pop-up">
+      <div class="modal-container account-container overlay overlay--transform">
+        <div class="modal-content">
+          <div class="modal-close account-close">&#10006;</div>
+          <h1 class="modal-login">Create account</h1>
+          <form action="#" class="form modal-form" method="get">
+            <div class="modal-part-two">
+              <label for="email" class="form-label"><h4>Email</h4></label>
+              <input
+                type="text"
+                name="email"
+                class="modal-input"
+                placeholder="Enter Email"
+                required
+              />
+              <label for="password" class="form-label"><h4>Password</h4></label>
+              <input
+                type="password"
+                name="password"
+                class="modal-input"
+                placeholder="Enter Password"
+                required
+              />
+              <button class="login-button sign-in--background">Sign Up</button>
+              <div class="modal-footer">
+                <span class="modal-placeholder modal-placeholder--transporent"
+                  ><h5>Already have an acount?</h5></span
+                >
+                <span
+                  class="modal-placeholder modal-placeholder--background account-login"
+                  ><h5>Login in</h5></span
+                >
+              </div>
+              <!-- close modal-footer -->
+            </div>
+            <!-- close modal-par-two -->
+          </form>
+        </div>
+        <!-- close modal-content -->
+      </div>
+      <!-- close modal-container -->
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
