@@ -23,7 +23,7 @@ body {
     padding: 4.5rem 0;
   }
   @include media-tablet {
-    @include font(5vw, 5vw);
+    @include font(5.1vw, 5vw);
   }
   @include media-mobile {
     padding: 2rem 0;
