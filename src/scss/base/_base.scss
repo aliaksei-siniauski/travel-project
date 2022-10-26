@@ -9,6 +9,11 @@ body {
   overflow: hidden;
 }
 
+.stop-scroll {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 .section-title {
   padding: 8rem 0 4rem;
   color: $secondary-color;
