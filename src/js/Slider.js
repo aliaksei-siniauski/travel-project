@@ -95,6 +95,15 @@ const prevSlide = () => {
   }
 };
 
+const checkMobileSlidebyBullets = () => {
+  bullets.forEach((bullet, indexBullet) => {
+    bullet.addEventListener("click", () => {
+      index = indexBullet;
+      prepareActiveSlide(index);
+    });
+  });
+};
+
 const addHandlerToAroows = () => {
   arrowNext.addEventListener("click", nextSlide);
   arrowPrev.addEventListener("click", prevSlide);
@@ -108,6 +117,7 @@ const matchesFunction = () => {
   }
   if (window.matchMedia("(max-width: 390px)").matches) {
     addHandlerToAroows();
+    checkMobileSlidebyBullets();
   }
 };
 matchesFunction();
