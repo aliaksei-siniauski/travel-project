@@ -641,7 +641,7 @@ h5 {
 
 .stories-inner {
   min-height: 1270px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7))), url("../images/fotter-bg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7))), url("../images/footer-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
 }
@@ -658,7 +658,7 @@ h5 {
 @media (max-width: 391px) {
   .stories-inner {
     min-height: 628px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7))), url("../images/fotter-bg-mb.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7))), url("../images/footer-bg-mb.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
   }
