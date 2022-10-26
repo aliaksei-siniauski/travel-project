@@ -4,7 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/icons/favicon.ico" />
+    <link rel="stylesheet" href="src/scss/main.css" />
     <title>Travel</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="logo">
+          <svg class="icon icon-logo">
+            <use xlink:href="src/icons/sprite.svg#i-logo"></use>
+          </svg>
+          <a href="index.html" class="logo__ttile">Travel Portal</a>
+        </div>
+        <!-- close logo -->
+        <nav class="nav header__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#preview" class="list__link">How It Works</a>
+            </li>
+            <li class="list__item">
+              <a href="#steps" class="list__link">Plan Your Trip</a>
+            </li>
+            <li class="list__item">
+              <a href="#destinations" class="list__link">Destinations</a>
+            </li>
+            <li class="list__item">
+              <a href="#stories" class="list__link">Travel Stories</a>
+            </li>
+            <li class="list__item list__item--mobile account-link">
+              <a href="#" class="list__link">Account</a>
+            </li>
+            <li class="list__item list__item--mobile">
+              <a href="#social" class="list__link">Social Media</a>
+            </li>
+          </ul>
+          <!-- close list -->
+        </nav>
+        <!-- close nav -->
+        <div class="header__button">
+          <button class="button button--small button-login">Login</button>
+        </div>
+        <!-- close header__button -->
+        <!-- pop-up -->
+        <span class="hamburger">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </span>
+      </div>
+      <!-- close container -->
+    </header>
+  </body>
 </html>

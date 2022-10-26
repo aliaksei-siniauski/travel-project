@@ -1,0 +1,55 @@
+/* Fonts */
+
+@mixin font-face($font-family, $url, $weight, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../fonts/#{$url}.woff") format("woff"),
+      url("../fonts/#{$url}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+@mixin font($size, $height, $weight: 500, $style: normal) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin media-laptop-large {
+  @media (max-width: 1260px) {
+    @content;
+  }
+}
+
+@mixin media-laptop {
+  @media (max-width: 1050px) {
+    @content;
+  }
+}
+
+@mixin media-tablet-large {
+  @media (max-width: 951px) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-big {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
