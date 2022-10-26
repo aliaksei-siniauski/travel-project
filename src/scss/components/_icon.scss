@@ -1,7 +1,6 @@
 .icon {
   display: inline-block;
   fill: $light-color;
-  @extend %cursor-pointer;
   &:hover {
     fill: $hover-color;
   }

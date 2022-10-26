@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-.modal-close, .modal-placeholder, .login-button, .icon, .slider-bullet, .hamburger, .list__link, .button, .story-block__text--link {
+.modal-close, .modal-placeholder, .login-button, .slider-bullet, .hamburger, .list__link, .button, .story-block__text--link {
   cursor: pointer;
 }
 
@@ -1149,17 +1149,18 @@ h5 {
   color: hsl(180deg, 100%, 50%);
 }
 .list__link:hover::before {
-  display: block;
-  background-color: yellow;
+  opacity: 1;
 }
 .list__link::before {
-  display: none;
+  display: block;
   content: "";
   width: 70%;
   height: 0.2rem;
   position: absolute;
   top: 3rem;
   left: 0.1rem;
+  background: hsl(180deg, 100%, 50%);
+  opacity: 0;
 }
 @media (max-width: 391px) {
   .list__link::before {
