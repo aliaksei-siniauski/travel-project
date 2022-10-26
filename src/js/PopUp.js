@@ -5,6 +5,17 @@ export {
   showSignPopUp,
   closeSingPopUp,
   showAccountPopUp,
+  showAleretWithUserEmailAndPassword,
+};
+
+window.onload = () => {
+  showLoginPopUp();
+  closeLoginPopUp();
+  closePopUpOverlay();
+  showSignPopUp();
+  closeSingPopUp();
+  showAccountPopUp();
+  addClickBulleteHander();
 };
 
 const showLoginPopUp = () => {
@@ -71,12 +82,19 @@ const showAccountPopUp = () => {
   });
 };
 
-window.onload = () => {
-  showLoginPopUp();
-  closeLoginPopUp();
-  closePopUpOverlay();
-  showSignPopUp();
-  closeSingPopUp();
-  showAccountPopUp();
-  addClickBulleteHander();
+const signInButton = document.querySelector(".sign-in-button");
+
+const showAleretWithUserEmailAndPassword = (e) => {
+  e.preventDefault();
+  const signInEmail = document.querySelector(".sign-in-email");
+  const signInPasword = document.querySelector(".sign-in-password");
+  const userEmailValue = signInEmail.value;
+  const userValuePassword = signInPasword.value;
+
+  if (userEmailValue && userValuePassword) {
+    alert(
+      `You login is: ${userEmailValue}\nYou password is: ${userValuePassword}`
+    );
+  }
 };
+signInButton.addEventListener("click", showAleretWithUserEmailAndPassword);

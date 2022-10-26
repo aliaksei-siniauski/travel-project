@@ -6,4 +6,5 @@ import {
   showSignPopUp,
   closeSingPopUp,
   showAccountPopUp,
+  showAleretWithUserEmailAndPassword,
 } from "./js/PopUp.js";
